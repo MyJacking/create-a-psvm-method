@@ -1,7 +1,11 @@
 package com.github.hcsp;
 
 public class Main {
-    // Create a public static void main(String[] args) method here.
-    // 在这里创建一个public static void main(String[] args)方法。
 
+    public static void main(String[] args) {
+        Cat cat = new Cat();
+        cat.name = "张三";
+
+        Cat cat2 = new Cat("李四");
+    }
 }
