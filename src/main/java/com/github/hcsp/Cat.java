@@ -2,18 +2,35 @@ package com.github.hcsp;
 
 public class Cat {
 
-    // static int i; 静态成员变量 不与任何对象绑定
-
-    public String name; // 成员变量
-
-    // 假如没有申明任何的constructor构造器
-    // 编译器会自动帮你生成一个
-    // Cat() {}
-
-    public Cat() {
+    public static void main(String[] args) {
+        Cat cat = new Cat();
+        cat.printName();
+        cat.printName("");
     }
 
-    public Cat(String name) {
-        this.name = name;
+    void printName() {
+
     }
+
+    void printName(String s) {
+
+    }
+
+
+//    String name;
+//
+//    public Cat(String name) {
+//        this.name = name;
+//    }
+//
+//    public static void main(String[] args) {
+//        int a = 1;
+//        int b = 2;
+//        Cat cat = new Cat("咪咪");
+//        cat.meow();
+//    }
+//
+//    private void meow() {
+//        System.out.println("喵");
+//    }
 }
